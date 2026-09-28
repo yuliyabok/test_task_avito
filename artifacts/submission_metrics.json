@@ -1,0 +1,53 @@
+{
+  "experiment": "benchmark_six_channel_round_robin_submission",
+  "backend": "cupy-cusparse",
+  "gpu": "NVIDIA GeForce RTX 4060",
+  "seed": 42,
+  "benchmark_queries": 2452,
+  "benchmark_items": 189212,
+  "per_channel_depth": 50,
+  "final_k": 50,
+  "channel_order": [
+    "word_title_global",
+    "word_description_global",
+    "word_title_local",
+    "word_description_local",
+    "char_title_global",
+    "char_title_local"
+  ],
+  "channels": {
+    "word_title": {
+      "matrix_features": 71188,
+      "matrix_nnz": 1265741,
+      "global_mean_candidates": 47.067292006525285,
+      "local_mean_candidates": 27.023654159869494,
+      "search_seconds": 0.821394438000425,
+      "elapsed_seconds": 2.348617078998359
+    },
+    "word_description": {
+      "matrix_features": 2584654,
+      "matrix_nnz": 45511498,
+      "global_mean_candidates": 49.29771615008156,
+      "local_mean_candidates": 34.97797716150082,
+      "search_seconds": 7.367559107999114,
+      "elapsed_seconds": 63.294890191999
+    },
+    "char_title": {
+      "matrix_features": 155608,
+      "matrix_nnz": 14025429,
+      "global_mean_candidates": 49.99755301794453,
+      "local_mean_candidates": 40.685562805872756,
+      "search_seconds": 3.378510782000376,
+      "elapsed_seconds": 8.964511170997866
+    }
+  },
+  "answer_rows": 2452,
+  "minimum_predictions": 50,
+  "maximum_predictions": 50,
+  "mean_predictions": 50.0,
+  "empty_answers": 0,
+  "duplicate_query_ids": 0,
+  "sha256": "be42179cbf8f35de3c4ca8fe6429d5b67d3004cddc600b5ecd893dfb74eada3c",
+  "strict_validation_passed": true,
+  "elapsed_seconds": 75.24285794899697
+}
